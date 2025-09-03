@@ -72,7 +72,7 @@ const Game = () => {
   return (
     <div 
       className="min-h-screen flex flex-col items-center"
-      style={{ backgroundImage: "url('/tic.jpg')" }}
+      style={{ backgroundImage: "url('tic.jpg')" }}
     >
       {currentRound < totalRounds &&
         <>
