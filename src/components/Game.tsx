@@ -49,11 +49,15 @@ const Game = () => {
     setCurrentPlayer(currentPlayer === 'X' ? 'O' : 'X')
   }
 
+  const nextPlayer = draw 
+      ? (countX < countO ? 'X' : (countO < countX ? 'O' : currentPlayer))
+      : winner === 'X' ? 'O' : 'X'
+
   const restart = () => {
     setBoard(Array(9).fill(null))
     setWinner(null)
     setDraw(false)
-    setCurrentPlayer('X')
+    setCurrentPlayer(nextPlayer)
     setWinnerLine([])
   }
 
@@ -78,9 +82,10 @@ const Game = () => {
         <>
           <RoundTracker currentRound={currentRound} totalRounds={totalRounds}/>
         
-          {winner && <WinnerModal winner={winner} restart={restart} round={currentRound} />}
+          {winner && <WinnerModal winner={winner} restart={restart} 
+            nextPlayer={nextPlayer} round={currentRound} />}
 
-          {draw && <DrawModal restart={restart} round={currentRound} />}
+          {draw && <DrawModal restart={restart} round={currentRound} nextPlayer={nextPlayer} />}
         
           <div className="flex flex-col md:flex-row md:items-start items-center md:gap-20 mt-5">
             <Board 
