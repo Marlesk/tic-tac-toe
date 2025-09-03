@@ -10,6 +10,16 @@ Styled with **TailwindCSS** for a modern UI and features a scoreboard, rounds, c
 
 ---
 
+## 📏 Game Rules / Turn Logic
+- Players take turns as usual (X and O).  
+- If a round ends with a **winner**:
+  - The **losing player** starts the next round.
+- If a round ends in a **draw**:
+  - The player with the **lower total score** will play first in the next round.
+  - If both players have **equal total scores**, the **player who played first in the previous round** goes first.
+
+---
+
 ## ⚙️ Features
 - Two-player mode (X & O)
 - Highlights the winning line
