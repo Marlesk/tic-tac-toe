@@ -42,7 +42,7 @@ const Scores = ({ countX, countO, countDraw, newGame }: ScoresProps) => {
            transition
             bg-gradient-to-r from-yellow via-cyan-500 to-cyan
           hover:from-yellow-600 hover:via-cyan-600 hover:to-cyan-500"
-          style={{ cursor: "url('/eraser.png') 0 0, auto" }}
+          style={{ cursor: `url(${import.meta.env.BASE_URL}eraser.png) 0 0, auto` }}
         >
           Reset Game
         </button>

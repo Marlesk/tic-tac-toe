@@ -21,7 +21,7 @@ const Board = ({ board, winnerLine, handlePlayer, winner, draw, currentPlayer }:
           )}
         </div>
         <div className="grid grid-cols-3 gap-4 w-80 h-80 p-4 bg-pink/65 rounded-2xl shadow-lg"
-          style={{cursor: "url('/pencil.png') 0 0, auto" }}>
+          style={{cursor: `url(${import.meta.env.BASE_URL}pencil.png) 0 0, auto` }}>
           {board.map((cell, index) => (
             <div
               key={index}
