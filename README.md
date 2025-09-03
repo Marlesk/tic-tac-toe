@@ -10,14 +10,14 @@ Styled with **TailwindCSS** for a modern UI and features a scoreboard, rounds, c
 
 ---
 
-## 🖼️ Features
-- ✅ Two-player mode (X & O)
-- ✅ Highlights the winning line
-- ✅ Shows the current player
-- ✅ Scoreboard for **X, O, and Draws**
-- ✅ Confetti and animations when a player wins 🎉
-- ✅ Custom cursors (pencil ✏️ for playing, eraser 🧽 for restart)
-- ✅ Responsive design (works on desktop & mobile)
+##⚙️ Features
+✅ Two-player mode (X & O)
+✅ Highlights the winning line
+✅ Shows the current player
+✅ Scoreboard for **X, O, and Draws**
+✅ Confetti and animations when a player wins 🎉
+✅ Custom cursors (pencil ✏️ for playing, eraser 🧽 for restart)
+✅ Responsive design (works on desktop & mobile)
 
 ---
 
@@ -26,8 +26,6 @@ Styled with **TailwindCSS** for a modern UI and features a scoreboard, rounds, c
 - 🟦 **TypeScript**
 - ⚡ **Vite**
 - 🎨 **TailwindCSS**
-- 🎉 **react-confetti**
-- 🎭 **lucide-react icons**
 
 ---
 
