@@ -10,7 +10,7 @@ Styled with **TailwindCSS** for a modern UI and features a scoreboard, rounds, c
 
 ---
 
-##⚙️ Features
+## ⚙️ Features
 ✅ Two-player mode (X & O)
 ✅ Highlights the winning line
 ✅ Shows the current player
