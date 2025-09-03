@@ -7,9 +7,9 @@ type ScoresProps = {
 
 const Scores = ({ countX, countO, countDraw, newGame }: ScoresProps) => {
   return (
-    <div className="flex flex-col items-center space-y-4 mt-4 mb-20 md:mb-0">
-      <h2 className="text-2xl font-bold text-white mt-2">Scoreboard</h2>
-      <div className="flex space-x-6 bg-pink/30 backdrop-blur-md px-6 py-4 rounded-2xl shadow-lg">
+    <div className="flex flex-col items-center space-y-4 md:mt-4 mb-10 md:mb-0">
+      <h2 className="md:text-2xl text-xl font-bold text-white md:mt-2">Scoreboard</h2>
+      <div className="flex space-x-6 bg-pink/30 backdrop-blur-md px-4 py-3 md:px-6 md:py-4 rounded-2xl shadow-lg">
         {/* Player X */}
         <div className="flex flex-col items-center">
           <div className="w-12 h-12 rounded-full bg-cyan flex items-center justify-center text-white font-bold text-xl">

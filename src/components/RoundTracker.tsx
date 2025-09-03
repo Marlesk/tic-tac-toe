@@ -5,8 +5,8 @@ type RoundTrackerProps = {
 
 const RoundTracker = ({ currentRound, totalRounds }: RoundTrackerProps) => {
   return (
-    <div className="flex flex-col items-center mt-14">
-      <h2 className="text-2xl font-bold text-white">Round</h2>
+    <div className="flex flex-col items-center md:mt-14 mt-8">
+      <h2 className="md:text-2xl text-xl font-bold text-white">Round</h2>
       <div className="flex space-x-2">
         {Array.from({ length: totalRounds }, (_, i) => (
           <div
@@ -17,7 +17,7 @@ const RoundTracker = ({ currentRound, totalRounds }: RoundTrackerProps) => {
           />
         ))}
       </div>
-      <span className="text-white mt-2 font-bold text-xl">
+      <span className="text-white mt-2 font-bold md:text-xl">
         {currentRound} / {totalRounds}
       </span>
     </div>

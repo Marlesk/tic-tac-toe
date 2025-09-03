@@ -12,7 +12,7 @@ type Props = {
 const FinalWinner = ({ countX, countO, countDraw, newGame }: Props) => {
   const { width, height } = useWindowSize()
 
-  const isDraw = countDraw > countO && countDraw > countX
+  const isDraw = countDraw >= countO && countDraw >= countX
   const winner = countX > countO ? 'X' : countO > countX ? 'O' : null
 
   return (
@@ -20,7 +20,7 @@ const FinalWinner = ({ countX, countO, countDraw, newGame }: Props) => {
         {winner && !isDraw &&
           <>
             <Confetti width={width} height={height} />
-              <span className="text-4xl font-extrabold flex items-center gap-4 text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-pink-400 to-cyan-400 animate-pulse">
+              <span className="md:text-4xl text-3xl font-extrabold flex items-center gap-4 text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-pink-400 to-cyan-400 animate-pulse">
                 <PartyPopper size={36} className="text-yellow-400" />
                 Winner: Player {winner}
                 <PartyPopper size={36} className="text-yellow-400" />
